@@ -1,0 +1,427 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    header.cabecalho{
+        padding: 0 30px;
+        padding-top: 30px;
+    }
+
+    header.cabecalho > img{
+        width: 120px;
+        height: 40px;
+    }
+
+    nav.menu{
+        gap: 20px;   
+    }
+
+    nav.menu > a{
+        font-size: 16px;
+    }
+
+    section.one_files h1{
+        font-size: 40px;
+    }
+    
+    section.one_files p{
+        font-size: 18px;
+    }
+
+    section.one_files > article > form{
+        margin-top: 20px;
+    }
+    
+    section.one_files > article > form > input{
+        height: 55px;
+        padding: 15px;
+        width: 50%;
+    }
+    
+    section.one_files > article > form > button{
+        height: 55px;
+        width: 50%;
+    }
+
+    section.two_content h3{
+        font-size: 30px;
+    }
+    
+    section.two_content > article > div.texto_content > p{
+        font-size: 18px;
+    }
+
+    .section_especial > div > a{
+        font-size: 18px;
+    }
+    
+    .section_especial > div > img{
+        width: 30px;
+        height: 30px;
+    }
+
+    div.comentario{
+        width: 50%;
+    }
+
+    img.asterisco{
+        height: 20px;
+        width: 20px;
+    }
+
+    div.comentario_texto > p{
+        font-size: 15px;
+    }
+
+    img.img_perfil{
+        height: 40px;
+        width: 40px;
+    }
+
+    div.perfil > p:nth-child(1){
+        font-size: 14px;
+    }
+    
+    div.perfil > p:nth-child(2){
+        font-size: 12px;
+    }
+
+    .three_acess h3{
+        font-size: 30px;
+    }
+    
+    .three_acess p{
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .three_acess form > input{
+        width: 50%;
+        height: 40px;
+    }
+    
+    .three_acess form > div > button{
+        width: 50%;
+        height: 40px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    section.one_files{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    section.one_files > article{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    section.one_files div.id_imagem{
+        width: 50%;
+    }
+
+    section.one_files h1{
+        font-size: 30px;
+        text-align: left;
+        width: 90%;
+    }
+    
+    section.one_files p{
+        text-align: left;
+        font-size: 16px;
+    }
+
+    section.one_files > article > form{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 25px;
+    }
+    
+    section.one_files > article > form > input{
+        height: 40px;
+        padding: 15px;
+        width: 50%;
+    }
+    
+    section.one_files > article > form > button{
+        height: 40px;
+        width: 30%;
+    }
+
+    section.two_content{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px;
+    }
+
+    section.two_content h3{
+        width: 100%;
+    }
+
+    section.two_content > article > div.texto_content > p{
+        width: 100%;
+    }
+
+    .section_especial{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    .section_especial > div{
+        width: auto;
+    }
+
+    .section_comentario{
+        display: flex;
+        align-items: flex-start;
+    } 
+    
+    div.comentario{
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    section.two_content > div:nth-of-type(1){
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+    
+    section.two_content img.illustration-2{
+        width: 90%;
+    }
+
+    .three_acess{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .three_acess > article{
+        display: flex;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+
+    .three_acess h3{
+        width: 100%;
+        font-size: 25px;
+        text-align: left;
+    }
+    
+    .three_acess p{
+        text-align: left;
+        width: 85%;
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .three_acess form > input{
+        width: 70%;
+        height: 40px;
+    }
+
+    .three_acess form > div{
+        width: 70%;
+        text-align: left;
+    }
+    
+    .three_acess form > div > button{
+        width: 50%;
+        height: 40px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 100px;
+        gap: 15px !important;
+    }
+
+    footer > aside{
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    section.two_content > article > div:nth-child(1){
+        width: 96%;
+    }
+    
+}
+
+@media screen and (min-width: 1440px){
+    header.cabecalho{
+        padding: 0 60px;
+        padding-top: 50px;
+    }
+
+    section.one_files h1{
+        font-size: 40px;
+    }
+
+    section.one_files > article > form{
+        padding-left: 35px;
+    }
+    
+    section.one_files > article > form > input{
+        height: 45px;
+        width: 50%;
+    }
+    
+    section.one_files > article > form > button{
+        height: 45px;
+        width: 30%;
+    }
+
+    .two_content > article{
+        padding-left: 30px;
+    }
+
+    div.comentario{
+        width: 55%;
+    }
+
+    .three_acess{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+    }
+
+    .three_acess h3{
+        font-size: 25px;
+    }
+    
+    .three_acess p{
+        font-size: 16px;
+    }
+
+    .three_acess form > input{
+        height: 45px;
+    }
+    
+    .three_acess form > div > button{
+        height: 45px;
+    } 
+}
+
+@media screen and (min-width: 1920px){
+    section.one_files h1{
+        font-size: 50px;
+        width: 87%;
+    }
+
+    section.one_files p{
+        font-size: 20px;
+        width: 87%;
+    }
+
+    section.one_files > article > form{
+        width: 87%;
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+    }
+    
+    section.one_files > article > form > input{
+        height: 50px;
+        width: 50%;
+    }
+    
+    section.one_files > article > form > button{
+        height: 50px;
+        width: 30%;
+    }
+
+    section.two_content h3{
+        font-size: 40px;
+        width: 87%;
+        margin: 0;
+    }
+
+    section.two_content > article > div.texto_content{
+        width: 98%;
+    }
+    
+    section.two_content > article > div.texto_content > p{
+        font-size: 20px;
+        width: 87%;
+        margin: 0;
+    }
+
+    .section_especial{
+        width: 98%;
+    }
+
+    .section_especial > div > a{
+        font-size: 20px;
+    }
+    
+    .section_especial > div > img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    div.comentario{
+        width: 40%;
+    }
+
+    div.comentario_texto > p{
+        font-size: 18px;
+    }
+
+    .three_acess h3{
+        font-size: 30px;
+    }
+    
+    .three_acess p{
+        font-size: 20px;
+    }
+
+    .three_acess form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .three_acess form > div{
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    
+    .three_acess form > input{
+        height: 50px;
+        width: 50%;
+    }
+    
+    .three_acess form > div > button{
+        height: 50px;
+        width: 40%;
+    }
+
+    footer > article{
+        font-size: 20px;
+    }
+
+    nav.menu_footer > a{
+        font-size: 16px;
+    }
+
+    footer > aside > div > i{
+        font-size: 16px;
+    }
+}
