@@ -1,19 +1,19 @@
-function atualizarInterfaceUsuario(mensagem, cor) {
+var paragraph = document.createElement('div');
 
-    var paragraph = document.createElement('div');
+function atualizarInterfaceUsuario(btn, mensagem, cor) {
     var texto = '<p id="error" style="color: ' + cor + '; width: 100%;">' + mensagem + '</p>';
     paragraph.innerHTML = texto;
     btn.insertAdjacentElement('afterend', paragraph);
-    aplicarEstilo();
-    console.log('teste2')
+    aplicarEstilo(btn);
+    console.log('teste2');
 }
 
 function clicar() {
     var btn = document.getElementById('text');
     if (btn.value === 'p@gmail.com') {
-        atualizarInterfaceUsuario('CONFIRMER', 'green');
+        atualizarInterfaceUsuario(btn, 'CONFIRMER', 'green');
     } else {
-        atualizarInterfaceUsuario('Verifique seu e-mail, por favor', 'red');
+        atualizarInterfaceUsuario(btn, 'Verifique seu e-mail, por favor', 'red');
     }
 
     if (window.innerWidth >= 1024) {
@@ -22,15 +22,14 @@ function clicar() {
         btn2.style.marginBottom = '25px';
         btn3.style.fontSize = '14px';
     }
-    console.log('teste1')
+    console.log('teste1');
 }
 
-function aplicarEstilo() {
-    var btn = document.getElementById('text');
+function aplicarEstilo(btn) {
     if (btn.value === 'p@gmail.com') {
         btn.style.borderColor = 'green';
     } else {
         btn.style.borderColor = 'red';
     }
-    console.log('teste3')
+    console.log('teste3');
 }
