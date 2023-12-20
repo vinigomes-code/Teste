@@ -8,7 +8,7 @@ function clicar(){
         paragraph.innerHTML = text;
         btn.insertAdjacentElement('afterend', paragraph);
     
-        style2()
+        style()
 
     }else{
         var text = '<p id="error" style="color: red; width: 100%;">Please check your email</p>'
@@ -31,11 +31,10 @@ function clicar(){
 function style(){
     var btn = document.getElementById('text');
 
-    btn.style.borderColor = 'red';
-}
+    if(btn.value === 'p@gmail.com'){
+        btn.style.borderColor = 'green';
+    }else{
+        btn.style.borderColor = 'red';
+    }
 
-function style2(){
-    var btn = document.getElementById('text');
-
-    btn.style.borderColor = 'green';
 }
