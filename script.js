@@ -1,8 +1,11 @@
 function atualizarInterfaceUsuario(mensagem, cor) {
+
+    var paragraph = document.createElement('div');
     var texto = '<p id="error" style="color: ' + cor + '; width: 100%;">' + mensagem + '</p>';
     paragraph.innerHTML = texto;
     btn.insertAdjacentElement('afterend', paragraph);
     aplicarEstilo();
+    console.log('teste2')
 }
 
 function clicar() {
@@ -19,6 +22,7 @@ function clicar() {
         btn2.style.marginBottom = '25px';
         btn3.style.fontSize = '14px';
     }
+    console.log('teste1')
 }
 
 function aplicarEstilo() {
@@ -28,4 +32,5 @@ function aplicarEstilo() {
     } else {
         btn.style.borderColor = 'red';
     }
+    console.log('teste3')
 }
