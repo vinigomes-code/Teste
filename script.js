@@ -1,40 +1,31 @@
-var paragraph = document.createElement('div');
+function atualizarInterfaceUsuario(mensagem, cor) {
+    var texto = '<p id="error" style="color: ' + cor + '; width: 100%;">' + mensagem + '</p>';
+    paragraph.innerHTML = texto;
+    btn.insertAdjacentElement('afterend', paragraph);
+    aplicarEstilo();
+}
 
-function clicar(){
+function clicar() {
     var btn = document.getElementById('text');
-
-    if(btn.value === 'p@gmail.com'){ /* método remove espaços em branco de ambos os lados de uma string. */
-        var text = '<p id="error" style="color: green; width: 100%;">CONFIRMER</p>'
-        paragraph.innerHTML = text;
-        btn.insertAdjacentElement('afterend', paragraph);
-    
-        style()
-
-    }else{
-        var text = '<p id="error" style="color: red; width: 100%;">Please check your email</p>'
-        paragraph.innerHTML = text;
-        btn.insertAdjacentElement('afterend', paragraph);
-    
-        style()
-
+    if (btn.value === 'p@gmail.com') {
+        atualizarInterfaceUsuario('CONFIRMER', 'green');
+    } else {
+        atualizarInterfaceUsuario('Verifique seu e-mail, por favor', 'red');
     }
 
-    if(window.innerWidth >= 1024){
-        var btn2 = document.getElementById('botao_input')
-        var btn3 = document.getElementById('error')
+    if (window.innerWidth >= 1024) {
+        var btn2 = document.getElementById('botao_input');
+        var btn3 = document.getElementById('error');
         btn2.style.marginBottom = '25px';
-
         btn3.style.fontSize = '14px';
     }
 }
 
-function style(){
+function aplicarEstilo() {
     var btn = document.getElementById('text');
-
-    if(btn.value === 'p@gmail.com'){
+    if (btn.value === 'p@gmail.com') {
         btn.style.borderColor = 'green';
-    }else{
+    } else {
         btn.style.borderColor = 'red';
     }
-
 }
