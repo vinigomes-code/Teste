@@ -89,16 +89,21 @@ section.one_files > article > form{
     gap: 10px;
 }
 
-section.one_files > article > form > input{
+div.espaco{
+    width: 80%;
+}
+
+section.one_files > article > form input[type=text]{
     height: 40px;
     padding: 15px;
-    width: 80%;
+    width: 100%;
     border-radius: 3px;
     border: 2px solid hsl(0, 0%, 75%);
     color: hsl(0, 0%, 75%);
+    margin-bottom: 5px;
 }
 
-section.one_files > article > form > button{
+section.one_files > article > form > input[type=button]{
     height: 40px;
     width: 80%;
     background-color: hsl(224, 93%, 58%);
@@ -110,7 +115,7 @@ section.one_files > article > form > button{
     cursor: pointer;
 }
 
-section.one_files > article > form > button:hover{
+section.one_files > article > form > input[type=button]:hover{
     background-color: hsla(224, 93%, 58%, 0.562);
 }
 
